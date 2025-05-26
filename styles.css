@@ -1,0 +1,39 @@
+/* to anyone reading my code
+i am a noob
+plz excuse the excessive comments
+i am making notes to myself as i learn
+have a pleasant day */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    /* gap is the space between elements */
+    /* gap: 1em, 2em is like gap between row and col */
+    gap: 1em;
+}
+
+/*
+html {
+    text-align: center;
+}
+
+body {
+    margin: 0px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    border-radius: 10px;
+    border-style: solid;
+    padding: 2em;
+}
+*/
