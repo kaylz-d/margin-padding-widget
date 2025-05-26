@@ -19,9 +19,30 @@ html {
     text-align: center;
 }
 
+body {
+    background-color: aliceblue;
+}
+
+footer {
+    background-color: rgb(101, 102, 121);
+    color: white;
+    margin: 0px;
+    width: 100%;
+    padding: 1vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
 .grid-container {
     display: grid;
-    margin: 4vw;
+    margin: 2vw;
     /* gap is the space between elements */
     /* gap: 1em, 2em is like gap between row and col */
     gap: 1em;
@@ -47,11 +68,16 @@ html {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
     border-radius: 10px;
     border-style: solid;
     border-width: 2px;
-    border-color: grey;
-    background-color: rgb(239, 239, 239);   
+    border-color: rgb(141, 147, 184);
+    background-color: rgb(252, 252, 255);   
     padding: 2em;
 }
 
@@ -60,4 +86,17 @@ html {
     list-style: none;
     /* removes bulleted list indent */
     padding-inline-start: 0px;
+}
+/* lol i switched to using divs instead of the ul though */
+
+.slider-container {
+    width: 100%;
+}
+
+.slider {
+    /*wait*/
+}
+
+.slider::-webkit-slider-thumb {
+    cursor: pointer;
 }

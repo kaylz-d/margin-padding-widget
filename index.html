@@ -12,16 +12,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Onest:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 
 <body>
 
-    <header style="margin-top: 8vh; margin-bottom: 8vh;">
+    <header style="margin-top: 4vh;">
         <nav>
             <!-- Margins and Padding; maybe About page -->
         </nav>
         <h1>Margins ∝ 1/Rizz</h1>
-        <p style="margin-top: 8px;">inspired by Shubham @ Epoch Bay Area</p>
+        <p style="margin-top: 8px;">this is that Twilight Sparkle & Mordecai meme that was popular for a bit</p>
     </header>
 
     <main>
@@ -35,11 +36,18 @@
 
             <!-- card -->
             <div class="card">
-                <ul>
-                    <!-- wanna make two slider bars -->
-                    <li>Margin:</li>
-                    <li>Rizz:</li>
-                </ul>
+                <div>
+                    <p style="margin-bottom: 1em;">Margin: <span id="marginVal"></span></p>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="50" value="25" class="slider" id="marginSlider">
+                    </div>
+                </div>
+                <div>
+                    <p style="margin-bottom: 1em;">Rizz: <span id="rizzVal"></span></p>
+                    <div class="slider-container">
+                        <input type="range" min="0" max="50" value="25" class="slider" id="rizzSlider">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -47,6 +55,11 @@
 
     <footer>
         <!-- have a lil sitemap -->
+         <ul class="flex-container" style="list-style: none; padding: 0px">
+            <li>Created by Kaylee Dinh</li>
+            <li>inspired by Shubham @ Epoch Bay Area</li>
+            <li><a href="https://github.com/kaylz-d/margin-padding-widget">Github Repo</a></li>
+         </ul>
     </footer>
 
 </body>
